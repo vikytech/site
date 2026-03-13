@@ -1,15 +1,1 @@
-const codeBlocks = document.querySelectorAll('.code-container + .highlighter-rouge');
-const copyCodeButtons = document.querySelectorAll('.copy-code-button');
-
-copyCodeButtons.forEach((copyCodeButton, index) => {
-  const code = codeBlocks[index].innerText;
-
-  copyCodeButton.addEventListener('click', () => {
-    window.navigator.clipboard.writeText(code);
-    copyCodeButton.classList.add('copied');
-
-    setTimeout(() => {
-      copyCodeButton.classList.remove('copied');
-    }, 2000);
-  });
-});
+const codeBlocks=document.querySelectorAll(".code-container + .highlighter-rouge"),copyCodeButtons=document.querySelectorAll(".copy-code-button");copyCodeButtons.forEach((e,o)=>{const c=codeBlocks[o].innerText;e.addEventListener("click",()=>{window.navigator.clipboard.writeText(c),e.classList.add("copied"),setTimeout(()=>{e.classList.remove("copied")},2e3)})});
