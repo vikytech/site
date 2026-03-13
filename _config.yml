@@ -19,7 +19,6 @@ kramdown:
 
 permalink: /:title
 
-# theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -49,6 +48,7 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - .rbenv-gemsets
   - node_modules/
   - vendor/bundle/
   - vendor/cache/
@@ -112,3 +112,13 @@ pagination:
 
 gist:
   noscript: false
+
+jekyll_admin:
+  homepage: "configuration"
+  hidden_links:
+    # - posts
+    - pages
+    - staticfiles
+    - datafiles
+    # - configuration
+
