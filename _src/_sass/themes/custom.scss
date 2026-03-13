@@ -1,49 +1,93 @@
-/* Theme for custom
+/* Minimal Professional Theme
 ––––––––––––––––––––––––––––––––––––––––––––––––––  */
-// Default
-$background__full: #fff !default;
-$elements__background: transparent !default;
-$color__clickable: #222222 !default;
-$color__text: #000 !default;
-$texts__background: rgba(226, 217, 218, 0.42) !default;
-$hr__color: #000 !default;
-$elements__box_border_color: transparent;
-$terminal__shadow_color: #000;
-$buttons__color: #fff !default;
+
+/* Default = Dark mode */
+$background__full: #0f1115 !default;
+$elements__background: #171a21 !default;
+$color__clickable: #3b82f6 !default;
+$color__text: #e5e7eb !default;
+$texts__background: #1f2430 !default;
+$hr__color: #2a3140 !default;
+$elements__box_border_color: #2a3140 !default;
+$terminal__shadow_color: rgba(0, 0, 0, 0.35) !default;
+$buttons__color: #ffffff !default;
 
 // Keyframes
-$keyframe__pulse_color_primary: rgba(26, 25, 25, 0.158);
-$keyframe__pulse_color_secondary: rgba(48, 47, 47, 0.103);
+$keyframe__pulse_color_primary: rgba(255, 255, 255, 0.06);
+$keyframe__pulse_color_secondary: rgba(255, 255, 255, 0.03);
 
 // Highlighter
-$highlight__background: #fafafa;
-$highlight__border_color: #fafafa;
-$highlight__color: #000;
+$highlight__background: #252b36;
+$highlight__border_color: #31394a;
+$highlight__color: #f9fafb;
 
 // Footer
-$footer__bg: #fff !default;
+$footer__bg: #0f1115 !default;
 
 // Blockquote
-$blockquote__background: #fafafa;
+$blockquote__background: #161b22;
 
 // Table
-$table__thead_th_background: #fff;
-$table__thead_th_color: #000;
-$table__thead_th_border: #1b1b1b;
-$table__tbody_td_background: #fff;
-$table__tbody_td_color: #000;
-$table__tbody_td_border: #1b1b1b;
+$table__thead_th_background: #1b2230;
+$table__thead_th_color: #f3f4f6;
+$table__thead_th_border: #2a3140;
+$table__tbody_td_background: #141922;
+$table__tbody_td_color: #e5e7eb;
+$table__tbody_td_border: #2a3140;
 
 // Gist theme
-$gist__background: #fff;
-$gist__code_color: black;
-$gist__border: #eeeeee #eeeeee #eeeeee;
-$gist__ln_background: #fff;
-$gist__ln_color: black;
-$gist__meta_color: black;
-$gist__meta_link_color: #666666;
-$gist__comment_color: #386931;
-$gist__function_color: #246194;
-$gist__fn_color: #ad8500;
-$gist__string_color: #c55829;
-$gist__var_color: #132b44;
+$gist__background: #11161d;
+$gist__code_color: #e5e7eb;
+$gist__border: #2a3140 #2a3140 #2a3140;
+$gist__ln_background: #0f141b;
+$gist__ln_color: #6b7280;
+$gist__meta_color: #cbd5e1;
+$gist__meta_link_color: #3b82f6;
+$gist__comment_color: #6b7280;
+$gist__function_color: #93c5fd;
+$gist__fn_color: #fbbf24;
+$gist__string_color: #fca5a5;
+$gist__var_color: #c4b5fd;
+
+
+@media (prefers-color-scheme: light) {
+  $background__full: #f8fafc !global;
+  $elements__background: #ffffff !global;
+  $color__clickable: #2563eb !global;
+  $color__text: #111827 !global;
+  $texts__background: #f3f4f6 !global;
+  $hr__color: #d1d5db !global;
+  $elements__box_border_color: #d1d5db !global;
+  $terminal__shadow_color: rgba(15, 23, 42, 0.08) !global;
+  $buttons__color: #ffffff !global;
+
+  $keyframe__pulse_color_primary: rgba(15, 23, 42, 0.06) !global;
+  $keyframe__pulse_color_secondary: rgba(15, 23, 42, 0.03) !global;
+
+  $highlight__background: #e5e7eb !global;
+  $highlight__border_color: #d1d5db !global;
+  $highlight__color: #111827 !global;
+
+  $footer__bg: #f8fafc !global;
+  $blockquote__background: #f3f4f6 !global;
+
+  $table__thead_th_background: #e5e7eb !global;
+  $table__thead_th_color: #111827 !global;
+  $table__thead_th_border: #d1d5db !global;
+  $table__tbody_td_background: #ffffff !global;
+  $table__tbody_td_color: #1f2937 !global;
+  $table__tbody_td_border: #e5e7eb !global;
+
+  $gist__background: #f8fafc !global;
+  $gist__code_color: #111827 !global;
+  $gist__border: #d1d5db #d1d5db #d1d5db !global;
+  $gist__ln_background: #f3f4f6 !global;
+  $gist__ln_color: #6b7280 !global;
+  $gist__meta_color: #374151 !global;
+  $gist__meta_link_color: #2563eb !global;
+  $gist__comment_color: #6b7280 !global;
+  $gist__function_color: #1d4ed8 !global;
+  $gist__fn_color: #b45309 !global;
+  $gist__string_color: #b91c1c !global;
+  $gist__var_color: #6d28d9 !global;
+}
