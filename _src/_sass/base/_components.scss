@@ -133,7 +133,7 @@
       -webkit-box-shadow: inset 0 0 6px $color__clickable;
     }
     ::-webkit-scrollbar-thumb:window-inactive {
-    background: $color__clickable;
+        background: $color__clickable;
     }
   }
 
