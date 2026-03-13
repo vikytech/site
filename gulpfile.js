@@ -70,8 +70,7 @@ function images_minify() {
 
 // task build
 const build = gulp.series(gulp.parallel(html_minify,
-    javascripts,
-    images_minify));
+    javascripts));
 
 // export tasks
 exports.postinstall = postinstall_statics;
