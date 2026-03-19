@@ -5,7 +5,7 @@ gem "webrick"
 gem 'rake', '~> 13.0.3'
 gem 'rackup', '~> 2.1.0'
 gem 'jekyll', '~> 4.4.1'
-gem 'json', '~> 2.6'
+gem 'json', '~> 2.19'
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17.0"
